@@ -6,7 +6,7 @@ def plot_statebased(data):
     fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(20, 7))
 
     # First plot
-    data.plot.scatter(x='candidate_sb_best_sum_nokgi_ln1', y='sb_final_best_ln',
+    data.plot.scatter(x='sb_candidate_best_ln', y='sb_final_best_ln',
                                       marker='o', linewidth=3, s=2, alpha=.2, color='crimson', ax=axes[0])
     dots1 = axes[0].collections[-1]
     offsets1 = dots1.get_offsets()
@@ -23,7 +23,7 @@ def plot_statebased(data):
     axes[0].set_xlabel('UCDP Candidate Fatalities (ln+1)', fontsize=12)
 
     # Second plot
-    data.plot.scatter(x='candidate_sb_best_sum_nokgi_ln1', y='acled_sb_fat_ln',
+    data.plot.scatter(x='sb_candidate_best_ln', y='acled_sb_fat_ln',
                                       marker='o', linewidth=3, s=2, alpha=.2, color='crimson', ax=axes[1])
     dots2 = axes[1].collections[-1]
     offsets2 = dots2.get_offsets()
@@ -69,7 +69,7 @@ def plot_nonstate(data):
     fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(20, 7))
 
     # First plot
-    data.plot.scatter(x='candidate_ns_best_sum_nokgi_ln1', y='ns_final_best_ln',
+    data.plot.scatter(x='ns_candidate_best_ln', y='ns_final_best_ln',
                                       marker='o', linewidth=3, s=2, alpha=.2, color='crimson', ax=axes[0])
     dots1 = axes[0].collections[-1]
     offsets1 = dots1.get_offsets()
@@ -86,7 +86,7 @@ def plot_nonstate(data):
     axes[0].set_xlabel('UCDP Candidate Fatalities (ln+1)', fontsize=12)
 
     # Second plot
-    data.plot.scatter(x='candidate_ns_best_sum_nokgi_ln1', y='acled_ns_fat_ln',
+    data.plot.scatter(x='ns_candidate_best_ln', y='acled_ns_fat_ln',
                                       marker='o', linewidth=3, s=2, alpha=.2, color='crimson', ax=axes[1])
     dots2 = axes[1].collections[-1]
     offsets2 = dots2.get_offsets()
@@ -132,7 +132,7 @@ def plot_onesided(data):
     fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(20, 7))
 
     # First plot
-    data.plot.scatter(x='candidate_os_best_sum_nokgi_ln1', y='os_final_best_ln',
+    data.plot.scatter(x='os_candidate_best_ln', y='os_final_best_ln',
                                       marker='o', linewidth=3, s=2, alpha=.2, color='crimson', ax=axes[0])
     dots1 = axes[0].collections[-1]
     offsets1 = dots1.get_offsets()
@@ -149,7 +149,7 @@ def plot_onesided(data):
     axes[0].set_xlabel('UCDP Candidate Fatalities (ln+1)', fontsize=12)
 
     # Second plot
-    data.plot.scatter(x='candidate_os_best_sum_nokgi_ln1', y='acled_os_fat_ln',
+    data.plot.scatter(x='os_candidate_best_ln', y='acled_os_fat_ln',
                                       marker='o', linewidth=3, s=2, alpha=.2, color='crimson', ax=axes[1])
     dots2 = axes[1].collections[-1]
     offsets2 = dots2.get_offsets()
